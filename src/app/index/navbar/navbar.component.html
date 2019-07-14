@@ -21,7 +21,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="jaascript:;;" [routerLink]="[ '/products/all-products' ]">{{
+        <a class="nav-link" href="jaascript:;;"  FTappEventTracker [event]="['signIn']" [signInStatus]="'Success!'"  [routerLink]="[ '/products/all-products' ]">{{
           this.translate.data["PRODUCTS"] | translate}}</a>
       </li>
       <li class="nav-item">
