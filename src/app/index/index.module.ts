@@ -13,10 +13,11 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SharedModule } from '../shared/shared.module';
+import { GoogleAnalyticsDirective } from '../google-analytics.directive';
 
 @NgModule({
 	imports: [ CommonModule, ProductModule, SharedModule, RouterModule.forChild(IndexRoutes) ],
-	declarations: [ IndexComponent, NavbarComponent, LoginComponent, FooterComponent ],
+	declarations: [ IndexComponent, NavbarComponent, LoginComponent, FooterComponent, GoogleAnalyticsDirective ],
 	schemas: [ NO_ERRORS_SCHEMA ],
 	exports: [ NavbarComponent, FooterComponent ],
 	providers: []

@@ -11,7 +11,7 @@ import { ProductModule } from './layouts/product/product.module';
 import { UserModule } from './layouts/user/user.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { GoogleAnalyticsDirective } from 'src/app/GoogleAnalyticsDirective';
+import { GoogleAnalyticsDirective } from './google-analytics.directive';
 
 /* to load and set en.json as the default application language */
 export function setupTranslateFactory(service: TranslateService): Function {
@@ -19,7 +19,7 @@ export function setupTranslateFactory(service: TranslateService): Function {
 }
 
 @NgModule({
-	declarations: [ AppComponent, GoogleAnalyticsDirective],
+	declarations: [ AppComponent],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,

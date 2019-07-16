@@ -28,7 +28,7 @@ declare let dataLayer: any;
 
 @Directive({
   // tslint:disable-next-line:directive-selector
-  selector: '[FTappEventTracker]'
+  selector: '[appEventTracker]'
 })
 export class GoogleAnalyticsDirective implements OnInit{
   @Input() public event: string[] = [];
